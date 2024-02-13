@@ -1,4 +1,4 @@
-from tkinter import simpledialog
+from tkinter import messagebox
 
 from Model import Model
 from View import View
@@ -10,6 +10,7 @@ class Controller:
         self.view = View(self)
 
     def calculations(self, radius, side_length):
+
         self.model.calculations(radius, side_length)
         self.view.show_results(self.model.radius,
                                self.model.side_len,
